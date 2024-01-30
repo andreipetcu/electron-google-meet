@@ -3,8 +3,8 @@ const path = require('path')
 
 function getIcon(isMuted) {
     let iconName = "meet";
-    if (isMuted)
-        iconName = "meet-mute";
+    // if (isMuted)
+    //     iconName = "meet-mute";
 
     let icon = path.join(__dirname, 'icons', iconName + '.png');
     if (process.platform == "win32") {

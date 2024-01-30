@@ -1,5 +1,5 @@
 {
-  "name": "meet",
+  "name": "Google Meet",
   "version": "0.3.0",
   "description": "Simple Electron application for Google Meet",
   "main": "main.js",
@@ -7,10 +7,13 @@
     "start": "electron .",
     "package-linux": "electron-packager . meet --overwrite --asar --platform=linux --arch=x64 --icon=icons/meet.png --prune=true --out=release-builds",
     "package-win": "electron-packager . meet --overwrite --asar --platform=win32 --arch=ia32 --icon=icons/meet.ico --prune=true --out=release-builds",
-    "package-mac": "electron-packager . meet --overwrite --platform=darwin --arch=x64 --icon=icons/meet.icns --prune=true --out=release-builds"
+    "package-mac": "electron-packager . \"Google Meet\" --overwrite --platform=darwin --arch=arm64 --icon=icons/meet.icns --prune=true --out=release-builds"
+  },
+  "build": {
+    "productName": "Google Meet"
   },
   "keywords": [
-    "Electron",
+    "Google",
     "Meet"
   ],
   "devDependencies": {
